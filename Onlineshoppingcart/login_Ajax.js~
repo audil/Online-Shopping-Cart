@@ -1,0 +1,21 @@
+$(function() {
+   
+
+   $('#log_in').click(function() {
+      
+
+       var name = $('input#user_name').val();
+       var password = $('input#password').val();
+       
+
+       $.ajax({
+           type: 'post',
+           url: 'session_login.php',
+           data: 'name=' + name + '&password=' + password ,
+
+           success: function(results) {
+               
+           }
+       }); // end ajax
+   });
+});
