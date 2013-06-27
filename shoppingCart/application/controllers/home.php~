@@ -1,0 +1,20 @@
+<?php
+// This file name is home.php
+// The class name for this file should be the same
+//  filename, except it should be capitalized.
+ 
+class Online extends Controller{
+    
+    function Online(){
+  parent::Controller();
+  }  
+    
+    
+    function index(){
+        $this->load->model(Online);
+$data['query']=$this->Online->Online_index;
+    }
+$this->load->view('home_view.php', $data);
+}
+}
+?>

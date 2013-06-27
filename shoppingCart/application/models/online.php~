@@ -1,0 +1,16 @@
+<?php
+// This file name is home.php
+// The class name for this file should be the same
+//  filename, except it should be capitalized.
+ 
+class Online extends Model(){
+    function Online(){
+  parent::Model();
+  }  
+    function Online(){
+        $this->load->database();
+$query=$this->db->get->('products');
+return->query->result();
+    }
+}
+?>
